@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SistemasLinq
 {
-    public partial class FrmMain : MaterialSkin.Controls.MaterialForm
+    public partial class FrmMain : Form
     {
         public FrmMain()
         {
