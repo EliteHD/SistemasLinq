@@ -69,33 +69,34 @@
             this.deleteToolStripMenuItem,
             this.updateToolStripMenuItem,
             this.listUserToolStripMenuItem});
+            this.usersToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.usersToolStripMenuItem.Text = "Users";
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(106, 28);
+            this.usersToolStripMenuItem.Text = "Users🥷";
             // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.updateToolStripMenuItem.Text = "Update";
             // 
             // listUserToolStripMenuItem
             // 
             this.listUserToolStripMenuItem.Name = "listUserToolStripMenuItem";
-            this.listUserToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.listUserToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.listUserToolStripMenuItem.Text = "List User";
             // 
             // workersToolStripMenuItem
@@ -105,32 +106,33 @@
             this.deleteToolStripMenuItem1,
             this.updateToolStripMenuItem1,
             this.listWorkersToolStripMenuItem});
+            this.workersToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.workersToolStripMenuItem.Name = "workersToolStripMenuItem";
-            this.workersToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.workersToolStripMenuItem.Text = "Workers";
+            this.workersToolStripMenuItem.Size = new System.Drawing.Size(130, 28);
+            this.workersToolStripMenuItem.Text = "Workers💼";
             // 
             // addToolStripMenuItem1
             // 
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.addToolStripMenuItem1.Text = "Add";
             // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.deleteToolStripMenuItem1.Text = "Delete";
             // 
             // updateToolStripMenuItem1
             // 
             this.updateToolStripMenuItem1.Name = "updateToolStripMenuItem1";
-            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.updateToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.updateToolStripMenuItem1.Text = "Update";
             // 
             // listWorkersToolStripMenuItem
             // 
             this.listWorkersToolStripMenuItem.Name = "listWorkersToolStripMenuItem";
-            this.listWorkersToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.listWorkersToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.listWorkersToolStripMenuItem.Text = "List Workers";
             // 
             // paysToolStripMenuItem
@@ -140,43 +142,48 @@
             this.deleteToolStripMenuItem2,
             this.updateToolStripMenuItem2,
             this.listPaysToolStripMenuItem});
+            this.paysToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.paysToolStripMenuItem.Name = "paysToolStripMenuItem";
-            this.paysToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.paysToolStripMenuItem.Text = "Pays";
+            this.paysToolStripMenuItem.Size = new System.Drawing.Size(94, 28);
+            this.paysToolStripMenuItem.Text = "Pays💰";
             // 
             // addToolStripMenuItem2
             // 
             this.addToolStripMenuItem2.Name = "addToolStripMenuItem2";
-            this.addToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
+            this.addToolStripMenuItem2.Size = new System.Drawing.Size(188, 28);
             this.addToolStripMenuItem2.Text = "Add";
             // 
             // deleteToolStripMenuItem2
             // 
             this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
-            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
+            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(188, 28);
             this.deleteToolStripMenuItem2.Text = "Delete";
             // 
             // updateToolStripMenuItem2
             // 
             this.updateToolStripMenuItem2.Name = "updateToolStripMenuItem2";
-            this.updateToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
+            this.updateToolStripMenuItem2.Size = new System.Drawing.Size(188, 28);
             this.updateToolStripMenuItem2.Text = "Update";
             // 
             // listPaysToolStripMenuItem
             // 
             this.listPaysToolStripMenuItem.Name = "listPaysToolStripMenuItem";
-            this.listPaysToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.listPaysToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.listPaysToolStripMenuItem.Text = "List Pays";
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(94, 28);
+            this.exitToolStripMenuItem.Text = "Exit❌";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.ForestGreen;
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.menuStrip1.Font = new System.Drawing.Font("FiraCode NF", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usersToolStripMenuItem,
             this.workersToolStripMenuItem,
@@ -184,7 +191,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -193,10 +200,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(166, 115);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(163, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(431, 33);
+            this.label1.Size = new System.Drawing.Size(470, 37);
             this.label1.TabIndex = 13;
             this.label1.Text = "Josias Dominguez Hernández";
             // 
@@ -204,23 +212,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(155, 126);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(141, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(457, 33);
+            this.label2.Size = new System.Drawing.Size(511, 37);
             this.label2.TabIndex = 14;
             this.label2.Text = "__________________________";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(68, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(96, 130);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1366, 768);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(602, 257);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
@@ -228,6 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
