@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace SistemasLinq
 {
-    public partial class FrmAddUser : Form
+    public partial class FrmAddUser : MaterialSkin.Controls.MaterialForm
     {
         public FrmAddUser()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmAddUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

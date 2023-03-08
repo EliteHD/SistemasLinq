@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SistemasLinq
 {
-    public partial class FrmDeleteUser : Form
+    public partial class FrmDeleteUser : MaterialSkin.Controls.MaterialForm
     {
         public FrmDeleteUser()
         {
             InitializeComponent();
+        }
+
+        private void FrmDeleteUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
