@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SistemasLinq
 {
-    public partial class FrmUpdateUser : Form
+    public partial class FrmUpdateUser : MaterialSkin.Controls.MaterialForm
     {
         public FrmUpdateUser()
         {
             InitializeComponent();
+        }
+
+        private void FrmUpdateUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

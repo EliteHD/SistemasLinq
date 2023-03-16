@@ -43,5 +43,36 @@ namespace SistemasLinq
         {
 
         }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDeleteUser deluser = new FrmDeleteUser();
+            deluser.Show();
+            this.Hide();
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDeleteUser updateuser = new FrmDeleteUser(); 
+            updateuser.Show();
+            this.Hide();
+        }
+
+        private void listUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmViewUser frmViewUser = new FrmViewUser();
+            frmViewUser.Show();
+            this.Hide();
+        }
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

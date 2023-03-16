@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbmuser = new System.Windows.Forms.ComboBox();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.SuspendLayout();
             // 
@@ -55,14 +55,15 @@
             this.label2.Size = new System.Drawing.Size(457, 33);
             this.label2.TabIndex = 14;
             this.label2.Text = "__________________________";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // comboBox1
+            // cbmuser
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(130, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cbmuser.FormattingEnabled = true;
+            this.cbmuser.Location = new System.Drawing.Point(130, 175);
+            this.cbmuser.Name = "cbmuser";
+            this.cbmuser.Size = new System.Drawing.Size(171, 21);
+            this.cbmuser.TabIndex = 15;
             // 
             // materialFlatButton1
             // 
@@ -78,14 +79,15 @@
             this.materialFlatButton1.TabIndex = 16;
             this.materialFlatButton1.Text = "Eliminar";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
             // FrmDeleteUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 282);
+            this.ClientSize = new System.Drawing.Size(553, 272);
             this.Controls.Add(this.materialFlatButton1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbmuser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "FrmDeleteUser";
@@ -100,7 +102,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbmuser;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
     }
 }

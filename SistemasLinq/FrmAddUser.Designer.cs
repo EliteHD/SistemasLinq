@@ -110,6 +110,7 @@
             this.materialRaisedButton1.TabIndex = 4;
             this.materialRaisedButton1.Text = "Agregar";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // materialRaisedButton2
             // 
@@ -122,6 +123,7 @@
             this.materialRaisedButton2.TabIndex = 5;
             this.materialRaisedButton2.Text = "Limpiar";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // materialRaisedButton3
             // 
@@ -134,6 +136,7 @@
             this.materialRaisedButton3.TabIndex = 6;
             this.materialRaisedButton3.Text = "Cerrar";
             this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
             // 
             // txtuser
             // 
@@ -171,6 +174,10 @@
             // 
             this.cbmEstado.BackColor = System.Drawing.SystemColors.Window;
             this.cbmEstado.FormattingEnabled = true;
+            this.cbmEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Suspendido",
+            "Bloqueado"});
             this.cbmEstado.Location = new System.Drawing.Point(191, 280);
             this.cbmEstado.Name = "cbmEstado";
             this.cbmEstado.Size = new System.Drawing.Size(219, 21);
@@ -179,6 +186,13 @@
             // cbmTipo
             // 
             this.cbmTipo.FormattingEnabled = true;
+            this.cbmTipo.Items.AddRange(new object[] {
+            "Administrador",
+            "Root",
+            "Trabajador",
+            "Normal",
+            "Solo lectura",
+            "Restringido"});
             this.cbmTipo.Location = new System.Drawing.Point(191, 334);
             this.cbmTipo.Name = "cbmTipo";
             this.cbmTipo.Size = new System.Drawing.Size(219, 21);
@@ -226,6 +240,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FrmAddUser";
             this.Text = "Add User";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAddUser_FormClosed);
             this.Load += new System.EventHandler(this.FrmAddUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

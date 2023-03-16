@@ -73,6 +73,7 @@
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(106, 28);
             this.usersToolStripMenuItem.Text = "Users🥷";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem
             // 
@@ -86,18 +87,21 @@
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // listUserToolStripMenuItem
             // 
             this.listUserToolStripMenuItem.Name = "listUserToolStripMenuItem";
             this.listUserToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.listUserToolStripMenuItem.Text = "List User";
+            this.listUserToolStripMenuItem.Click += new System.EventHandler(this.listUserToolStripMenuItem_Click);
             // 
             // workersToolStripMenuItem
             // 
@@ -116,6 +120,7 @@
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
             this.addToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.addToolStripMenuItem1.Text = "Add";
+            this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
             // deleteToolStripMenuItem1
             // 
