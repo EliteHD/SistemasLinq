@@ -14,7 +14,7 @@ namespace SistemasLinq
     public partial class FrmDeleteUser : MaterialSkin.Controls.MaterialForm
     {
         DataClasses1DataContext dataContext;
-        public List<usuarios> listausuarios;
+            public List<usuarios> listausuarios;
 
         public FrmDeleteUser()
         {

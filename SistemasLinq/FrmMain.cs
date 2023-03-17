@@ -58,7 +58,7 @@ namespace SistemasLinq
 
         private void updateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmDeleteUser updateuser = new FrmDeleteUser(); 
+            FrmUpdateUser updateuser = new FrmUpdateUser(); 
             updateuser.Show();
             this.Hide();
         }
@@ -71,6 +71,11 @@ namespace SistemasLinq
         }
 
         private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

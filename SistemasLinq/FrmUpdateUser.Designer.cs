@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.cbmTipo = new System.Windows.Forms.ComboBox();
-            this.cbmEstado = new System.Windows.Forms.ComboBox();
             this.txtpass = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtuser = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbedit = new System.Windows.Forms.ComboBox();
+            this.cbname = new System.Windows.Forms.ComboBox();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.cbmTipo = new System.Windows.Forms.ComboBox();
+            this.cbmEstado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -55,34 +54,6 @@
             this.label1.Size = new System.Drawing.Size(260, 33);
             this.label1.TabIndex = 24;
             this.label1.Text = "Modificar Usuario";
-            // 
-            // cbmTipo
-            // 
-            this.cbmTipo.FormattingEnabled = true;
-            this.cbmTipo.Items.AddRange(new object[] {
-            "Administrador",
-            "Root",
-            "Trabajador",
-            "Normal",
-            "Solo lectura",
-            "Restringido"});
-            this.cbmTipo.Location = new System.Drawing.Point(215, 402);
-            this.cbmTipo.Name = "cbmTipo";
-            this.cbmTipo.Size = new System.Drawing.Size(219, 21);
-            this.cbmTipo.TabIndex = 23;
-            // 
-            // cbmEstado
-            // 
-            this.cbmEstado.BackColor = System.Drawing.SystemColors.Window;
-            this.cbmEstado.FormattingEnabled = true;
-            this.cbmEstado.Items.AddRange(new object[] {
-            "Activo",
-            "Suspendido",
-            "Bloqueado"});
-            this.cbmEstado.Location = new System.Drawing.Point(215, 348);
-            this.cbmEstado.Name = "cbmEstado";
-            this.cbmEstado.Size = new System.Drawing.Size(219, 21);
-            this.cbmEstado.TabIndex = 22;
             // 
             // txtpass
             // 
@@ -119,7 +90,7 @@
             // materialRaisedButton3
             // 
             this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(375, 474);
+            this.materialRaisedButton3.Location = new System.Drawing.Point(308, 474);
             this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton3.Name = "materialRaisedButton3";
             this.materialRaisedButton3.Primary = true;
@@ -128,22 +99,10 @@
             this.materialRaisedButton3.Text = "Cerrar";
             this.materialRaisedButton3.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(238, 474);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(105, 39);
-            this.materialRaisedButton2.TabIndex = 18;
-            this.materialRaisedButton2.Text = "Limpiar";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            // 
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(98, 474);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(162, 474);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -151,6 +110,7 @@
             this.materialRaisedButton1.TabIndex = 17;
             this.materialRaisedButton1.Text = "Agregar";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // materialLabel4
             // 
@@ -219,18 +179,14 @@
             this.label2.TabIndex = 25;
             this.label2.Text = "__________________________";
             // 
-            // cbedit
+            // cbname
             // 
-            this.cbedit.BackColor = System.Drawing.SystemColors.Window;
-            this.cbedit.FormattingEnabled = true;
-            this.cbedit.Items.AddRange(new object[] {
-            "Activo",
-            "Suspendido",
-            "Bloqueado"});
-            this.cbedit.Location = new System.Drawing.Point(97, 182);
-            this.cbedit.Name = "cbedit";
-            this.cbedit.Size = new System.Drawing.Size(294, 21);
-            this.cbedit.TabIndex = 26;
+            this.cbname.BackColor = System.Drawing.SystemColors.Window;
+            this.cbname.FormattingEnabled = true;
+            this.cbname.Location = new System.Drawing.Point(97, 182);
+            this.cbname.Name = "cbname";
+            this.cbname.Size = new System.Drawing.Size(294, 21);
+            this.cbname.TabIndex = 26;
             // 
             // materialFlatButton1
             // 
@@ -246,6 +202,35 @@
             this.materialFlatButton1.TabIndex = 27;
             this.materialFlatButton1.Text = "Mostrar";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
+            // 
+            // cbmTipo
+            // 
+            this.cbmTipo.FormattingEnabled = true;
+            this.cbmTipo.Items.AddRange(new object[] {
+            "Administrador",
+            "Root",
+            "Trabajador",
+            "Normal",
+            "Solo lectura",
+            "Restringido"});
+            this.cbmTipo.Location = new System.Drawing.Point(215, 402);
+            this.cbmTipo.Name = "cbmTipo";
+            this.cbmTipo.Size = new System.Drawing.Size(219, 21);
+            this.cbmTipo.TabIndex = 23;
+            // 
+            // cbmEstado
+            // 
+            this.cbmEstado.BackColor = System.Drawing.SystemColors.Window;
+            this.cbmEstado.FormattingEnabled = true;
+            this.cbmEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Suspendido",
+            "Bloqueado"});
+            this.cbmEstado.Location = new System.Drawing.Point(215, 348);
+            this.cbmEstado.Name = "cbmEstado";
+            this.cbmEstado.Size = new System.Drawing.Size(219, 21);
+            this.cbmEstado.TabIndex = 22;
             // 
             // FrmUpdateUser
             // 
@@ -253,14 +238,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 553);
             this.Controls.Add(this.materialFlatButton1);
-            this.Controls.Add(this.cbedit);
+            this.Controls.Add(this.cbname);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbmTipo);
             this.Controls.Add(this.cbmEstado);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.materialRaisedButton3);
-            this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel3);
@@ -278,19 +262,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbmTipo;
-        private System.Windows.Forms.ComboBox cbmEstado;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtpass;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtuser;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbedit;
+        private System.Windows.Forms.ComboBox cbname;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private System.Windows.Forms.ComboBox cbmTipo;
+        private System.Windows.Forms.ComboBox cbmEstado;
     }
 }

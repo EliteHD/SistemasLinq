@@ -212,6 +212,7 @@
             this.label1.Size = new System.Drawing.Size(470, 37);
             this.label1.TabIndex = 13;
             this.label1.Text = "Josias Dominguez Hernández";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
