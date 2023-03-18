@@ -120,11 +120,23 @@
     <Compile Include="FrmAddUser.Designer.cs">
       <DependentUpon>FrmAddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddWorker.Designer.cs">
+      <DependentUpon>FrmAddWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDeleteUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDeleteUser.Designer.cs">
       <DependentUpon>FrmDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteWorker.Designer.cs">
+      <DependentUpon>FrmDeleteWorker.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -138,11 +150,23 @@
     <Compile Include="FrmUpdateUser.Designer.cs">
       <DependentUpon>FrmUpdateUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateWorker.Designer.cs">
+      <DependentUpon>FrmUpdateWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmViewUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmViewUser.Designer.cs">
       <DependentUpon>FrmViewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewWorler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewWorler.Designer.cs">
+      <DependentUpon>FrmViewWorler.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -150,8 +174,14 @@
     <EmbeddedResource Include="FrmAddUser.resx">
       <DependentUpon>FrmAddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddWorker.resx">
+      <DependentUpon>FrmAddWorker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDeleteUser.resx">
       <DependentUpon>FrmDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteWorker.resx">
+      <DependentUpon>FrmDeleteWorker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
@@ -159,8 +189,14 @@
     <EmbeddedResource Include="FrmUpdateUser.resx">
       <DependentUpon>FrmUpdateUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateWorker.resx">
+      <DependentUpon>FrmUpdateWorker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmViewUser.resx">
       <DependentUpon>FrmViewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewWorler.resx">
+      <DependentUpon>FrmViewWorler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

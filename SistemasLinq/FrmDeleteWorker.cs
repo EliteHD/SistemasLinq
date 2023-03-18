@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.Linq;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,42 +12,36 @@ using System.Windows.Forms;
 
 namespace SistemasLinq
 {
-    public partial class FrmDeleteUser : MaterialSkin.Controls.MaterialForm
+    public partial class FrmDeleteWorker : MaterialSkin.Controls.MaterialForm
     {
         DataClasses1DataContext dataContext;
-            public List<usuarios> listausuarios;
-
-        public FrmDeleteUser()
+        public List<trabajador> listatrabajador;
+        public FrmDeleteWorker()
         {
             InitializeComponent();
+            cbmuser.DropDownStyle = ComboBoxStyle.DropDownList;
             string Conexion = ConfigurationManager.ConnectionStrings["SistemasLinq.Properties.Settings.ejercicioConnectionString"].ConnectionString;
             dataContext = new DataClasses1DataContext(Conexion);
         }
 
-        private void FrmDeleteUser_Load(object sender, EventArgs e)
+        private void FrmDeleteWorker_Load(object sender, EventArgs e)
         {
-            var lista = dataContext.usuarios.OrderBy(x => x.id).ToList();
-            foreach(usuarios usuario in lista)
+            var lista = dataContext.trabajador.OrderBy(x => x.id_trabajador).ToList();
+            foreach (trabajador trabajador in lista)
             {
-                cbmuser.Items.Add(usuario.usuario);
+                cbmuser.Items.Add(trabajador.nombre);
             }
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
-            usuarios user = dataContext.usuarios.FirstOrDefault(us => us.usuario.Equals(cbmuser.SelectedItem.ToString()));
-            dataContext.usuarios.DeleteOnSubmit(user);
+            trabajador trabajador = dataContext.trabajador.FirstOrDefault(tr => tr.nombre.Equals(cbmuser.SelectedItem.ToString()));
+            dataContext.trabajador.DeleteOnSubmit(trabajador);
             dataContext.SubmitChanges();
-            MessageBox.Show("Usuario eliminado");
+            MessageBox.Show("Trabajador eliminado");
             cbmuser.Items.Clear();
             cbmuser.Text = "";
-            FrmDeleteUser_Load(sender, e);
+            FrmDeleteWorker_Load(sender, e);
         }
     }
 }

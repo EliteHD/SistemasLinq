@@ -19,6 +19,9 @@ namespace SistemasLinq
         public FrmAddUser()
         {
             InitializeComponent();
+            cbmEstado.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbmTipo.DropDownStyle = ComboBoxStyle.DropDownList;
+
             string Conexion = ConfigurationManager.ConnectionStrings["SistemasLinq.Properties.Settings.ejercicioConnectionString"].ConnectionString;
             dataContext = new DataClasses1DataContext(Conexion);
         }

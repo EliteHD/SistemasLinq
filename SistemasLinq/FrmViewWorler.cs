@@ -10,40 +10,32 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemasLinq
-{   
-
-    public partial class FrmViewUser : MaterialSkin.Controls.MaterialForm
+{
+    public partial class FrmViewWorler : MaterialSkin.Controls.MaterialForm
     {
+        
         DataClasses1DataContext dataContext;
-        public List<usuarios> listausuarios;
-
-
-        public FrmViewUser()
+        public List<trabajador> listatrabajador;
+        public FrmViewWorler()
         {
             InitializeComponent();
             string Conexion = ConfigurationManager.ConnectionStrings["SistemasLinq.Properties.Settings.ejercicioConnectionString"].ConnectionString;
             dataContext = new DataClasses1DataContext(Conexion);
         }
 
-        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FrmViewWorler_Load(object sender, EventArgs e)
         {
-
-
-        }
-
-        private void FrmViewUser_Load(object sender, EventArgs e)
-        {
-            listausuarios = dataContext.usuarios.OrderBy(x => x.id).ToList();
-            dataGridView1.DataSource = listausuarios;
-
+            listatrabajador = dataContext.trabajador.OrderBy(x => x.id_trabajador).ToList();
+            dataGridView1.DataSource = listatrabajador;
 
         }
 
         private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
-            FrmMain inicio = new FrmMain();
-            inicio.Show();
+            FrmMain frmMain = new FrmMain();
+            frmMain.Show();
             this.Hide();
+
         }
     }
 }

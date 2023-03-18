@@ -72,12 +72,35 @@ namespace SistemasLinq
 
         private void addToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            FrmAddWorker frmAddWorker = new FrmAddWorker();
+            frmAddWorker.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmDeleteWorker frmDeleteWorker = new FrmDeleteWorker();
+            frmDeleteWorker.Show();
+            this.Hide();
+        }
+
+        private void updateToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmUpdateWorker frmUpdateWorker = new FrmUpdateWorker();
+            frmUpdateWorker.Show();
+            this.Hide();
+        }
+
+        private void listWorkersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmViewWorler frmViewWorler = new FrmViewWorler();
+            frmViewWorler.Show();
+            this.Hide();
         }
     }
 }

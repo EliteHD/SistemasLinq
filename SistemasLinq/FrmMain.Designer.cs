@@ -127,18 +127,21 @@
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
             this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.deleteToolStripMenuItem1.Text = "Delete";
+            this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
             // 
             // updateToolStripMenuItem1
             // 
             this.updateToolStripMenuItem1.Name = "updateToolStripMenuItem1";
             this.updateToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
             this.updateToolStripMenuItem1.Text = "Update";
+            this.updateToolStripMenuItem1.Click += new System.EventHandler(this.updateToolStripMenuItem1_Click);
             // 
             // listWorkersToolStripMenuItem
             // 
             this.listWorkersToolStripMenuItem.Name = "listWorkersToolStripMenuItem";
             this.listWorkersToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.listWorkersToolStripMenuItem.Text = "List Workers";
+            this.listWorkersToolStripMenuItem.Click += new System.EventHandler(this.listWorkersToolStripMenuItem_Click);
             // 
             // paysToolStripMenuItem
             // 
