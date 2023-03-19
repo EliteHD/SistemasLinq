@@ -102,5 +102,38 @@ namespace SistemasLinq
             frmViewWorler.Show();
             this.Hide();
         }
+
+        private void paysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmAddSalary frmAddPay = new FrmAddSalary();
+            frmAddPay.Show();
+            this.Hide();
+        }
+
+        private void deleteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmDeleteSalary frmDeletePay = new FrmDeleteSalary();
+            frmDeletePay.Show();
+            this.Hide();
+        }
+
+        private void updateToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmUpdateSalary frmUpdatePay = new FrmUpdateSalary();
+            frmUpdatePay.Show();
+            this.Hide();
+        }
+
+        private void listPaysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmViewSalary frmViewPay = new FrmViewSalary();
+            frmViewPay.Show();
+            this.Hide();
+        }
     }
 }

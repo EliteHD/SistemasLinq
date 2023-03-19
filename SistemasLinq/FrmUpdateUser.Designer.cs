@@ -187,6 +187,7 @@
             this.cbname.Name = "cbname";
             this.cbname.Size = new System.Drawing.Size(294, 21);
             this.cbname.TabIndex = 26;
+            this.cbname.SelectedIndexChanged += new System.EventHandler(this.cbname_SelectedIndexChanged);
             // 
             // materialFlatButton1
             // 

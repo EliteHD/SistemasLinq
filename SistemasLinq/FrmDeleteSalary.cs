@@ -12,36 +12,35 @@ using System.Windows.Forms;
 
 namespace SistemasLinq
 {
-    public partial class FrmDeleteWorker : MaterialSkin.Controls.MaterialForm
+    public partial class FrmDeleteSalary : MaterialSkin.Controls.MaterialForm
     {
         DataClasses1DataContext dataContext;
-        public List<trabajador> listatrabajador;
-        public FrmDeleteWorker()
+        public List<sueldo> listasueldo;
+        public FrmDeleteSalary()
         {
             InitializeComponent();
-            cbmuser.DropDownStyle = ComboBoxStyle.DropDownList;
             string Conexion = ConfigurationManager.ConnectionStrings["SistemasLinq.Properties.Settings.ejercicioConnectionString"].ConnectionString;
             dataContext = new DataClasses1DataContext(Conexion);
         }
 
-        private void FrmDeleteWorker_Load(object sender, EventArgs e)
+        private void FrmDeletePay_Load(object sender, EventArgs e)
         {
-            var lista = dataContext.trabajador.OrderBy(x => x.id_trabajador).ToList();
-            foreach (trabajador trabajador in lista)
+            var lista = dataContext.sueldo.OrderBy(x => x.id_sueldo).ToList();
+            foreach (sueldo sueldo in lista)
             {
-                cbmuser.Items.Add(trabajador.nombre);
+                cbmsalary.Items.Add(sueldo.id_sueldo);
             }
         }
 
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
-            trabajador trabajador = dataContext.trabajador.FirstOrDefault(tr => tr.nombre.Equals(cbmuser.SelectedItem.ToString()));
-            dataContext.trabajador.DeleteOnSubmit(trabajador);
+            sueldo sueldo = dataContext.sueldo.FirstOrDefault(su => su.id_sueldo.Equals(cbmsalary.SelectedItem.ToString()));
+            dataContext.sueldo.DeleteOnSubmit(sueldo);
             dataContext.SubmitChanges();
-            MessageBox.Show("Trabajador eliminado");
-            cbmuser.Items.Clear();
-            cbmuser.Text = "";
-            FrmDeleteWorker_Load(sender, e);
+            MessageBox.Show("Sueldo eliminado");
+            cbmsalary.Items.Clear();
+            cbmsalary.Text = "";
+            FrmDeletePay_Load(sender, e);
         }
 
         private void materialRaisedButton3_Click(object sender, EventArgs e)

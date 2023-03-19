@@ -32,6 +32,7 @@
             this.cbmuser = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // materialFlatButton1
@@ -80,11 +81,25 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "__________________________";
             // 
+            // materialRaisedButton3
+            // 
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(551, 229);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(89, 29);
+            this.materialRaisedButton3.TabIndex = 22;
+            this.materialRaisedButton3.Text = "Cerrar";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
+            // 
             // FrmDeleteWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 270);
+            this.Controls.Add(this.materialRaisedButton3);
             this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.cbmuser);
             this.Controls.Add(this.label1);
@@ -103,5 +118,6 @@
         private System.Windows.Forms.ComboBox cbmuser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
     }
 }

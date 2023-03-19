@@ -154,30 +154,35 @@
             this.paysToolStripMenuItem.Name = "paysToolStripMenuItem";
             this.paysToolStripMenuItem.Size = new System.Drawing.Size(94, 28);
             this.paysToolStripMenuItem.Text = "Pays💰";
+            this.paysToolStripMenuItem.Click += new System.EventHandler(this.paysToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem2
             // 
             this.addToolStripMenuItem2.Name = "addToolStripMenuItem2";
             this.addToolStripMenuItem2.Size = new System.Drawing.Size(188, 28);
             this.addToolStripMenuItem2.Text = "Add";
+            this.addToolStripMenuItem2.Click += new System.EventHandler(this.addToolStripMenuItem2_Click);
             // 
             // deleteToolStripMenuItem2
             // 
             this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
             this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(188, 28);
             this.deleteToolStripMenuItem2.Text = "Delete";
+            this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.deleteToolStripMenuItem2_Click);
             // 
             // updateToolStripMenuItem2
             // 
             this.updateToolStripMenuItem2.Name = "updateToolStripMenuItem2";
             this.updateToolStripMenuItem2.Size = new System.Drawing.Size(188, 28);
             this.updateToolStripMenuItem2.Text = "Update";
+            this.updateToolStripMenuItem2.Click += new System.EventHandler(this.updateToolStripMenuItem2_Click);
             // 
             // listPaysToolStripMenuItem
             // 
             this.listPaysToolStripMenuItem.Name = "listPaysToolStripMenuItem";
             this.listPaysToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
             this.listPaysToolStripMenuItem.Text = "List Pays";
+            this.listPaysToolStripMenuItem.Click += new System.EventHandler(this.listPaysToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 

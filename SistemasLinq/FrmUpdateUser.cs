@@ -46,7 +46,6 @@ namespace SistemasLinq
             cbname.Items.Clear();
             cbname.Text = "";
             FrmUpdateUser_Load(sender, e);
-            //clean the form
             txtuser.Text = "";
             txtpass.Text = "";
             cbmEstado.Text = "";
@@ -68,6 +67,11 @@ namespace SistemasLinq
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void cbname_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -48,5 +48,12 @@ namespace SistemasLinq
             cbmuser.Text = "";
             FrmDeleteUser_Load(sender, e);
         }
+
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            FrmMain frmMain = new FrmMain();
+            frmMain.Show();
+            this.Hide();
+        }
     }
 }
